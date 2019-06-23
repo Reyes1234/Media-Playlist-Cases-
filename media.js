@@ -27,7 +27,7 @@ class Podcasts extends MediaPlaylist {
 // new class is working, why is super not in red?
 
 class Movies extends MediaPlaylist{
-  constructor(rating, name, duration){
+  constructor(artist, playing, playlist, duration, rating, name){
     super(artist, playing, playlist, duration);
     this._rating = rating;
     this._name = name;
@@ -44,7 +44,8 @@ let artists = ["Shakira", "Beyonce", "Adele", "Rihanna"];
 let playlists = ["No", "Halo", "Hello", "Umbrella"];
 let songs = ["Gipsy", "Formation", "Somebody", "Rude"];
 
-myartist = ('Shakira');
-
+let myartist = ('Shakira');
+//working here
+//
 myartist.next();
 //starts giving errors it says it's not a function??
